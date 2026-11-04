@@ -1,0 +1,5 @@
+Student name: Nick Ivannikov
+Student number: 766032
+Student class: HAIT26FT1C
+GitHub Repository: https://github.com/Nick-Doing-IT-Stuff/Web-Markup-Final-Assessment
+GitHub Pages URL: your github pages URL
