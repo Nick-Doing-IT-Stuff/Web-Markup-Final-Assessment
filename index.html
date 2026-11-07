@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI for Better Learning — Home</title>
     <meta
       name="description"
-      content="Learn how to use AI responsibly as a student learning assistant without replacing critical thinking."
+      content="Learn how to use AI responsibly as a student for learning purposes without replacing your own critical thinking ability."
     />
+    <title>AI for Better Learning</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -17,168 +17,170 @@
     <!-- Header & Navigation -->
     <header class="site-header">
       <nav class="main-nav" aria-label="Main Navigation">
-        <!-- Real Image Logo -->
+        <!-- Logo -->
         <a href="index.html" class="logo-container">
-          <img
-            src="img/logo.png"
-            alt="AI for Better Learning Logo"
-            class="logo-icon"
-          />
-          <span class="logo-text">AI for Better Learning</span>
+          <img src="img/logo.png" alt="MIND aid logo" class="logo-icon" />
         </a>
 
-        <ul class="nav-links">
+        <!-- Desktop Navigation -->
+        <ul class="desktop-nav-links">
           <li>
             <a href="index.html" class="active" aria-current="page">Home</a>
           </li>
-          <li><a href="understand_task.html">Understand Task</a></li>
-          <li><a href="write_better_prompts.html">Write Prompts</a></li>
-          <li><a href="evaluate_output.html">Evaluate Output</a></li>
-          <li><a href="make_it_yours.html">Make It Yours</a></li>
+          <li><a href="understand_task.html">01. Understand Task</a></li>
+          <li><a href="write_better_prompts.html">02. Write Prompts</a></li>
+          <li><a href="evaluate_output.html">03. Evaluate Output</a></li>
+          <li><a href="make_it_yours.html">04. Make It Yours</a></li>
           <li><a href="contacts.html">Contacts</a></li>
         </ul>
+
+        <!-- Mobile Navigation -->
+        <details class="mobile-menu-details">
+          <summary class="burger-button" aria-label="Toggle navigation menu">
+            <span aria-hidden="true">☰</span>
+          </summary>
+          <ul class="mobile-nav-links">
+            <li>
+              <a href="index.html" class="active" aria-current="page">Home</a>
+            </li>
+            <li><a href="understand_task.html">01. Understand Task</a></li>
+            <li><a href="write_better_prompts.html">02. Write Prompts</a></li>
+            <li><a href="evaluate_output.html">03. Evaluate Output</a></li>
+            <li><a href="make_it_yours.html">04. Make It Yours</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </details>
       </nav>
     </header>
 
     <!-- Main Content -->
     <main id="main-content" class="home-page">
-      <!-- Top Hero Section -->
+      <!-- Hero Section -->
       <section class="hero-home-centered">
         <h1>AI FOR BETTER LEARNING</h1>
         <p class="hero-subtitle">Use AI to learn better. Not to think less.</p>
         <p class="hero-description">
-          The difference isn't always the AI. Sometimes, it's how you use it.
+          The difference isn't always AI. Sometimes it's how you use it.
         </p>
-
-        <p class="hero-cta-wrapper">
-          <a href="understand_task.html" class="btn-hero"
-            >Find out why &rarr;</a
-          >
-        </p>
+        <a href="understand_task.html" class="button-hero">Find out why →</a>
       </section>
 
-      <!-- Prompts Showcase Section (Strictly 3 Columns, 6 Cards) -->
+      <!-- Prompts Showcase Section -->
       <section class="prompts-showcase-section">
         <h2 class="showcase-title">
           Why are some artificial intelligence answers better than others?
         </h2>
 
-        <div class="prompts-grid-horizontal">
+        <section class="prompts-grid-horizontal">
           <!-- Card 1 -->
           <article class="prompt-card">
             <header class="prompt-header">
               <code
-                >&gt; Write an essay about ecology and urban green spaces.</code
+                >> Write an essay about ecology and urban green spaces.</code
               >
             </header>
             <p>
               Produces a generic text draft lacking specific academic citations
               or recent data.
             </p>
-            <footer class="prompt-footer">
-              <figure class="card-visual">
-                <img
-                  src="img/Smirk.png"
-                  alt="Illustration representing smirk expression"
-                />
-              </figure>
-            </footer>
+            <figure class="card-visual">
+              <img
+                src="img/Smirk.png"
+                alt="A personalized facial expression showing staying skeptical after mixed response."
+                class="reaction-img"
+              />
+            </figure>
           </article>
 
           <!-- Card 2 -->
           <article class="prompt-card">
             <header class="prompt-header">
-              <code>&gt; Explain quantum mechanics like I'm 10 years old.</code>
+              <code>> Explain quantum mechanics like I'm 10 years old.</code>
             </header>
             <p>
               Delivers an engaging summary using clear, relatable real-world
               analogies.
             </p>
-            <footer class="prompt-footer">
-              <figure class="card-visual">
-                <img
-                  src="img/Surprised.png"
-                  alt="Illustration representing surprised expression"
-                />
-              </figure>
-            </footer>
+            <figure class="card-visual">
+              <img
+                src="img/Victory.png"
+                alt="A personalized facial expression showing satisfaction of achieving a goal because of useful response."
+                class="reaction-img"
+              />
+            </figure>
           </article>
 
           <!-- Card 3 -->
           <article class="prompt-card">
             <header class="prompt-header">
-              <code>&gt; Review my C# code for performance bottlenecks.</code>
+              <code>> Review my C# code for performance bottlenecks.</code>
             </header>
             <p>
               Provides a detailed analysis highlighting memory efficiency tips.
             </p>
-            <footer class="prompt-footer">
-              <figure class="card-visual">
-                <img
-                  src="img/Thinking.png"
-                  alt="Illustration representing thinking process"
-                />
-              </figure>
-            </footer>
+            <figure class="card-visual">
+              <img
+                src="img/Thinking.png"
+                alt="A personalized facial expression showing thinking process after meaningful response."
+                class="reaction-img"
+              />
+            </figure>
           </article>
 
           <!-- Card 4 -->
           <article class="prompt-card">
             <header class="prompt-header">
-              <code>&gt; Write a conclusion based on my notes.</code>
+              <code>> Write a conclusion based on my notes.</code>
             </header>
             <p>
               Generates a generalized summary that misses your actual research
               findings.
             </p>
-            <footer class="prompt-footer">
-              <figure class="card-visual">
-                <img
-                  src="img/Facepalm.png"
-                  alt="Illustration representing facepalm expression"
-                />
-              </figure>
-            </footer>
+            <figure class="card-visual">
+              <img
+                src="img/Facepalm.png"
+                alt="A personalized facial expression showing deep disappointment in response."
+                class="reaction-img"
+              />
+            </figure>
           </article>
 
           <!-- Card 5 -->
           <article class="prompt-card">
             <header class="prompt-header">
-              <code>&gt; Solve this algebra problem with steps.</code>
+              <code>> Solve this algebra problem with steps.</code>
             </header>
             <p>
               Gives a final number without logic, making it hard to check or
               learn.
             </p>
-            <footer class="prompt-footer">
-              <figure class="card-visual">
-                <img
-                  src="img/Screaming.png"
-                  alt="Illustration representing screaming expression"
-                />
-              </figure>
-            </footer>
+            <figure class="card-visual">
+              <img
+                src="img/Screaming.png"
+                alt="A personalized facial expression showing a wide open mouth from anger from misleading response."
+                class="reaction-img"
+              />
+            </figure>
           </article>
 
           <!-- Card 6 -->
           <article class="prompt-card">
             <header class="prompt-header">
-              <code>&gt; Create authentic logo for a sauce shop.</code>
+              <code>> Create authentic logo for a sauce shop.</code>
             </header>
             <p>
               Produces a creative visual concept that matches the requested
               product vibe.
             </p>
-            <footer class="prompt-footer">
-              <figure class="card-visual">
-                <img
-                  src="img/Joyful.png"
-                  alt="Illustration of creative success"
-                />
-              </figure>
-            </footer>
+            <figure class="card-visual">
+              <img
+                src="img/Hyped.png"
+                alt="A personalized facial expression showing intense excitement after incredible response."
+                class="reaction-img"
+              />
+            </figure>
           </article>
-        </div>
+        </section>
       </section>
     </main>
 
