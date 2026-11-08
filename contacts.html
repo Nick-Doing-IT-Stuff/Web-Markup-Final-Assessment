@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts — AI for Better Learning</title>
+    <meta
+      name="description"
+      content="Get in touch with us to ask questions, suggest improvements, or give feedback on our website."
+    />
+    <meta
+      name="keywords"
+      content="Understand the task, Write better prompts, Evaluate AI output, Make it yours, Contact us"
+    />
+    <meta name="author" content="Nick Ivannikov" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" type="image/png" href="img/logo.png" />
+  </head>
+  <body>
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+      <nav class="main-nav" aria-label="Main Navigation">
+        <!-- Logo Section -->
+        <a href="index.html" class="logo-container">
+          <img
+            src="img/logo.png"
+            alt="MIND aid logo"
+            title="Website logo"
+            class="logo-icon"
+          />
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="desktop-nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="understand_task.html">01. Understand Task</a></li>
+          <li><a href="write_better_prompts.html">02. Write Prompts</a></li>
+          <li><a href="evaluate_output.html">03. Evaluate Output</a></li>
+          <li><a href="make_it_yours.html">04. Make It Yours</a></li>
+          <li>
+            <a href="contacts.html" class="active" aria-current="page"
+              >Contacts</a
+            >
+          </li>
+        </ul>
+
+        <!-- Mobile Navigation -->
+        <details class="mobile-menu-details">
+          <summary class="burger-button" aria-label="Toggle navigation menu">
+            <span aria-hidden="true">☰</span>
+          </summary>
+          <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="understand_task.html">01. Understand Task</a></li>
+            <li><a href="write_better_prompts.html">02. Write Prompts</a></li>
+            <li><a href="evaluate_output.html">03. Evaluate Output</a></li>
+            <li><a href="make_it_yours.html">04. Make It Yours</a></li>
+            <li>
+              <a href="contacts.html" class="active" aria-current="page"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </details>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="contact-page">
+      <!-- Contact Form Section -->
+      <section id="contact-form-section" class="contact-form-container">
+        <!-- Hero Header -->
+        <section class="hero-step">
+          <p class="step-tag-blue">CONTACT &amp; FEEDBACK</p>
+          <h1>Contact Us</h1>
+          <p class="hero-lead">
+            If you have any questions or would like to share feedback and
+            suggestions for improving the website, feel free to reach out to us.
+          </p>
+        </section>
+
+        <!-- Two-Column Layout -->
+        <section class="contact-grid">
+          <!-- Left Column -->
+          <aside class="contact-info-card">
+            <h2>What to Expect</h2>
+            <ul class="expectations-list">
+              <li>
+                <img
+                  src="img/handshake.png"
+                  alt="Handshake icon"
+                  title="Human response expectation"
+                  class="float-expect-icon"
+                />
+                <strong class="expect-title">Human Response</strong>
+                <p class="expect-desc">
+                  We review all feedback carefully to make this guide better for
+                  students.
+                </p>
+              </li>
+              <li>
+                <img
+                  src="img/lock.png"
+                  alt="Lock icon"
+                  title="Honest prototype privacy"
+                  class="float-expect-icon"
+                />
+                <strong class="expect-title">Honest Prototype</strong>
+                <p class="expect-desc">
+                  Your contact details are only used if you request a direct
+                  reply from us.
+                </p>
+              </li>
+              <li>
+                <img
+                  src="img/watch.png"
+                  alt="Watch icon"
+                  title="Quick reply timeframe"
+                  class="float-expect-icon"
+                />
+                <strong class="expect-title">Quick Reply</strong>
+                <p class="expect-desc">
+                  If a response is needed, you will hear back via email as soon
+                  as possible.
+                </p>
+              </li>
+            </ul>
+          </aside>
+
+          <!-- Right Column -->
+          <article class="contact-card">
+            <form action="#success" method="get" class="contact-form">
+              <fieldset class="form-fieldset">
+                <legend class="sr-only">Contact Information</legend>
+
+                <!-- Salutation Dropdown -->
+                <p class="form-group">
+                  <label for="user-salutation">
+                    Choose your salutation <mark class="required-star">*</mark>
+                  </label>
+                  <select
+                    id="user-salutation"
+                    name="salutation"
+                    required
+                    aria-required="true"
+                  >
+                    <option value="" disabled selected>
+                      -- Select an option --
+                    </option>
+                    <option value="mr">Mr.</option>
+                    <option value="mrs">Mrs.</option>
+                    <option value="ms">Ms.</option>
+                    <option value="other">Other / Prefer not to say</option>
+                  </select>
+                </p>
+
+                <!-- Name -->
+                <p class="form-group">
+                  <label for="user-name">
+                    Name <mark class="required-star">*</mark>
+                  </label>
+                  <input
+                    type="text"
+                    id="user-name"
+                    name="name"
+                    placeholder="Nick Ivannikov"
+                    required
+                    aria-required="true"
+                  />
+                </p>
+
+                <!-- Email -->
+                <p class="form-group">
+                  <label for="user-email">
+                    Email Address <mark class="required-star">*</mark>
+                  </label>
+                  <input
+                    type="email"
+                    id="user-email"
+                    name="email"
+                    placeholder="xxxxx@student.inholland.nl"
+                    required
+                    aria-required="true"
+                  />
+                </p>
+
+                <!-- Subject -->
+                <p class="form-group">
+                  <label for="form-subject">
+                    What is this about? <mark class="required-star">*</mark>
+                  </label>
+                  <select
+                    id="form-subject"
+                    name="subject"
+                    required
+                    aria-required="true"
+                  >
+                    <option value="" disabled selected>
+                      -- Select subject --
+                    </option>
+                    <option value="feedback">General feedback</option>
+                    <option value="question">Question about guide</option>
+                    <option value="bug">Report an error</option>
+                    <option value="improvement">Suggest an improvement</option>
+                  </select>
+                </p>
+
+                <!-- Message -->
+                <p class="form-group">
+                  <label for="user-message">
+                    Message <mark class="required-star">*</mark>
+                  </label>
+                  <textarea
+                    id="user-message"
+                    name="message"
+                    rows="4"
+                    placeholder="Type your message here..."
+                    required
+                    aria-required="true"
+                  ></textarea>
+                </p>
+
+                <!-- Submit Button -->
+                <p class="form-submit-row">
+                  <button type="submit" class="button-hero btn-full">
+                    Send Message &rarr;
+                  </button>
+                </p>
+              </fieldset>
+            </form>
+          </article>
+        </section>
+      </section>
+
+      <!-- Success State View (Appears on form submit) -->
+      <section id="success" class="success-banner-card">
+        <span class="success-icon">🎉</span>
+        <h2>Thank you for contacting us!</h2>
+        <p class="success-message">
+          We received your message.<br />
+          We will reach you out immediately!
+        </p>
+        <p class="success-action">
+          <a href="index.html" class="button-hero"
+            >Go back to Homepage &rarr;</a
+          >
+        </p>
+      </section>
+
+      <!-- Socials Section -->
+      <section class="connect-section">
+        <h2>
+          Let's Connect! <span class="smile-icon" aria-hidden="true"></span>
+        </h2>
+        <ul class="socials-links-list">
+          <li>
+            <a
+              href="mailto:766032@student.inholland.nl"
+              aria-label="Send email"
+            >
+              <span class="socials-desktop">Email</span>
+              <span class="socials-mobile">Em</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/mykola-ivannikov/"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn profile"
+            >
+              <span class="socials-desktop">LinkedIn</span>
+              <span class="socials-mobile">Li</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://t.me/NickEvansMind"
+              target="_blank"
+              rel="noopener"
+              aria-label="Telegram account"
+            >
+              <span class="socials-desktop">Telegram</span>
+              <span class="socials-mobile">Tg</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://wa.me/380504438296"
+              target="_blank"
+              rel="noopener"
+              aria-label="WhatsApp account"
+            >
+              <span class="socials-desktop">WhatsApp</span>
+              <span class="socials-mobile">Wa</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/mykolaivannikov/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram profile"
+            >
+              <span class="socials-desktop">Instagram</span>
+              <span class="socials-mobile">In</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/profile.php?id=100078179751982"
+              target="_blank"
+              rel="noopener"
+              aria-label="Facebook profile"
+            >
+              <span class="socials-desktop">Facebook</span>
+              <span class="socials-mobile">Fb</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>&copy; 2026 AI for Better Learning Project. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
