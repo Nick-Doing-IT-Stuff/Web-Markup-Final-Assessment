@@ -756,7 +756,6 @@ body {
 }
 
 /* STEP 02: WRITE BETTER PROMPTS */
-
 .prompts-page {
     max-width: 55rem;
     margin: 0 auto;
@@ -827,7 +826,7 @@ body {
 
 /* Prompt Snippet Box */
 .prompt-snippet-box {
-    background-color: #F1F5F9;
+    background-color: #f1f5f9;
     border: 1px solid #cbd5e1;
     border-radius: 0.75rem;
     padding: 1.25rem 1.5rem;
@@ -1011,7 +1010,7 @@ body {
 
     .structure-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 0.6rem;
+        gap: 0.5rem;
     }
 
     .structure-card {
@@ -1035,16 +1034,15 @@ body {
     }
 
     .mini-snippet-preview code {
-        font-size: 0.72rem;
+        font-size: 0.7rem;
         line-height: 1.35;
     }
 
     .structure-card p {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
         line-height: 1.35;
     }
 }
-
 /* STEP 03: EVALUATE OUTPUT */
 
 .evaluate-page {
@@ -1073,7 +1071,7 @@ body {
     margin-bottom: 1.25rem;
 }
 
-.badge-icon-img {
+.badge-icon-emoji {
     width: 1.5rem;
     height: 1.5rem;
     object-fit: contain;
@@ -1343,6 +1341,197 @@ body {
 
     .questions-grid,
     .bear-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* STEP 04: MAKE IT YOURS */
+
+.make-yours-page {
+    max-width: 56.25rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Transformation Flow */
+.transformation-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 3.5rem;
+}
+
+.draft-card {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    padding: 1.75rem 2rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.card-raw {
+    border-top: 0.25rem solid #94a3b8;
+}
+
+.card-final {
+    border-top: 0.25rem solid #10b981;
+    background-color: #f0fdf4;
+}
+
+.draft-card-header {
+    margin-bottom: 1rem;
+}
+
+.badge {
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    padding: 0.35rem 0.65rem;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.badge-bad {
+    background-color: #f1f5f9;
+    color: #475569;
+}
+
+.badge-good {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.draft-quote {
+    font-size: 1.1rem;
+    line-height: 1.75;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.draft-quote strong {
+    color: #065f46;
+    background-color: #dcfce7;
+    padding: 0.1rem 0.35rem;
+    border-radius: 4px;
+}
+
+/* Connector with Arrow */
+.thinking-connector {
+    text-align: center;
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.connector-label {
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    color: var(--text-primary);
+    text-transform: uppercase;
+}
+
+/* Quick Comparison Table */
+.table-section {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    padding: 2rem 2.5rem;
+    margin-bottom: 3.5rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.table-section h3 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-light);
+    text-align: left;
+    color: var(--text-primary);
+}
+
+.comparison-table th {
+    background-color: #f1f5f9;
+    font-weight: 800;
+}
+
+.comparison-table tr:nth-child(even) {
+    background-color: #cff;
+}
+
+.comparison-table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* Transform Guide Grid */
+.transform-guide-section {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    padding: 2rem 2.5rem;
+    margin-bottom: 3.5rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.transform-guide-section h2 {
+    font-size: 1.35rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.transform-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+
+.transform-card {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.transform-card h3 {
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.transform-card p {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Mobile Adaptation */
+@media (max-width: 52rem) {
+    .transform-grid {
         grid-template-columns: 1fr;
     }
 }
