@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn how to write well structured prompts to get better and more accurate answers from AI."
+    />
+    <meta
+      name="keywords"
+      content="Understand the task, Write better prompts, Evaluate AI output, Make it yours, Contact us"
+    />
+    <meta name="author" content="Nick Ivannikov" />
+    <title>02. Write Prompts — AI for Better Learning</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" type="image/png" href="img/logo.png" />
+  </head>
+  <body>
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+      <nav class="main-nav" aria-label="Main Navigation">
+        <!-- Logo Section -->
+        <a href="index.html" class="logo-container">
+          <img
+            src="img/logo.png"
+            alt="MIND aid logo"
+            title="Website logo"
+            class="logo-icon"
+          />
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="desktop-nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="understand_task.html">01. Understand Task</a></li>
+          <li>
+            <a
+              href="write_better_prompts.html"
+              class="active"
+              aria-current="page"
+              >02. Write Prompts</a
+            >
+          </li>
+          <li><a href="evaluate_output.html">03. Evaluate Output</a></li>
+          <li><a href="make_it_yours.html">04. Make It Yours</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+
+        <!-- Mobile Navigation -->
+        <details class="mobile-menu-details">
+          <summary class="burger-button" aria-label="Toggle navigation menu">
+            <span aria-hidden="true">☰</span>
+          </summary>
+          <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="understand_task.html">01. Understand Task</a></li>
+            <li>
+              <a
+                href="write_better_prompts.html"
+                class="active"
+                aria-current="page"
+                >02. Write Prompts</a
+              >
+            </li>
+            <li><a href="evaluate_output.html">03. Evaluate Output</a></li>
+            <li><a href="make_it_yours.html">04. Make It Yours</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </details>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="prompts-page">
+      <!-- Hero Header -->
+      <section class="hero-step">
+        <p class="step-tag-blue">STEP 02</p>
+        <h1>Write Better Prompts</h1>
+        <p class="hero-lead">
+          The clearer the request, the less AI has to guess.
+        </p>
+      </section>
+
+      <!-- Prompts Comparison Section -->
+      <section class="prompt-examples-section">
+        <!-- Weak Prompt Example Card -->
+        <article class="prompt-demo-card weak-card">
+          <span class="demo-status-bar red-bar"></span>
+          <section class="demo-content">
+            <header class="demo-label">
+              <span class="status-badge red-badge">WEAK PROMPT</span>
+            </header>
+            <p class="prompt-snippet-box">
+              <code>&gt; "Write about ecology."</code>
+            </p>
+            <p class="demo-explanation">
+              <strong>Too vague:</strong> AI doesn't know what you need, who
+              it's for, or how the answer should look.
+            </p>
+          </section>
+        </article>
+
+        <!-- Structured Prompt Example Card -->
+        <article class="prompt-demo-card strong-card">
+          <span class="demo-status-bar green-bar"></span>
+          <section class="demo-content">
+            <header class="demo-label">
+              <span class="status-badge green-badge">OPTIMIZED PROMPT</span>
+            </header>
+            <p class="prompt-snippet-box">
+              <code
+                >&gt; "<mark class="hl-green"
+                  >I am an environmental science student.</mark
+                >
+                <mark class="hl-blue"
+                  >Explain the main causes of ocean pollution</mark
+                >
+                in <mark class="hl-purple">5 short bullet points</mark> using
+                <mark class="hl-orange">statistics from recent years</mark
+                >."</code
+              >
+            </p>
+            <p class="demo-explanation">
+              <strong>To the point:</strong> AI knows background and depth
+              level, what your need is, how the answer should look, and specific
+              expectations.
+            </p>
+          </section>
+        </article>
+      </section>
+
+      <!-- Structure of a Strong Prompt (Grid Section 2x2) -->
+      <section class="prompt-structure-section">
+        <h2>Structure of a Strong Prompt</h2>
+        <section class="structure-grid">
+          <!-- Card 1: Context -->
+          <article class="structure-card">
+            <header class="card-header-tag">
+              <h3>CONTEXT</h3>
+            </header>
+            <p class="mini-snippet-preview">
+              <code>"I am an environmental science student"</code>
+            </p>
+            <p>
+              <strong>Your background or story</strong> — tells AI who you are
+              and sets the depth level.
+            </p>
+          </article>
+
+          <!-- Card 2: Task -->
+          <article class="structure-card">
+            <header class="card-header-tag">
+              <h3>TASK</h3>
+            </header>
+            <p class="mini-snippet-preview">
+              <code>"Explain the main causes of..."</code>
+            </p>
+            <p>
+              <strong>The core job</strong> — basically the same from what you
+              read in your assignment guidelines.
+            </p>
+          </article>
+
+          <!-- Card 3: Format -->
+          <article class="structure-card">
+            <header class="card-header-tag">
+              <h3>FORMAT</h3>
+            </header>
+            <p class="mini-snippet-preview">
+              <code>"in 5 short bullet points"</code>
+            </p>
+            <p>
+              <strong>The visual look</strong> — how the answer should be
+              structured (bullets, essay, table, etc.).
+            </p>
+          </article>
+
+          <!-- Card 4: Requirement -->
+          <article class="structure-card">
+            <header class="card-header-tag">
+              <h3>REQUIREMENT</h3>
+            </header>
+            <p class="mini-snippet-preview">
+              <code>"using statistics from..."</code>
+            </p>
+            <p>
+              <strong>Specific expectations</strong> — raw ideas or constraints
+              you want AI to consider.
+            </p>
+          </article>
+        </section>
+      </section>
+
+      <!-- CTA Next Step -->
+      <section class="cta-next-step">
+        <p class="cta-subtext">
+          You asked. AI answered. Can you trust the answer?
+        </p>
+        <p class="cta-action">
+          <a href="evaluate_output.html" class="button-hero"
+            >EVALUATE OUTPUT &rarr;</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>&copy; 2026 AI for Better Learning Project. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
