@@ -1,4 +1,7 @@
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* HOME PAGE */
 
 /* Root Variables */
 :root {
@@ -220,7 +223,7 @@ body {
     gap: 1.5rem;
 }
 
-/* Prompt Cards із відновленою плавністю (transition) */
+/* Prompt Cards */
 .prompt-card {
     background-color: var(--card-background);
     border: 1px solid var(--border-light);
@@ -430,5 +433,323 @@ body {
         padding: 1rem;
         font-size: 0.8rem;
         text-align: center;
+    }
+}
+/* STEP 01: UNDERSTAND THE TASK */
+
+.understand-page {
+    max-width: 52rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.hero-step {
+    text-align: center;
+    padding: 2.5rem 0 2rem 0;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.step-tag-blue {
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    color: var(--brand-blue);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-family: var(--font-heading);
+}
+
+.hero-step h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    font-style: italic;
+    letter-spacing: -0.025em;
+    font-family: var(--font-heading);
+    white-space: normal;
+}
+
+.hero-lead {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+}
+
+/* Steps Editorial Section */
+.steps-editorial-section {
+    margin-bottom: 2.5rem;
+}
+
+.steps-editorial-section h2 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 1.25rem;
+    font-family: var(--font-heading);
+}
+
+.steps-clean-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    padding-left: 0;
+    max-width: 24rem;
+}
+
+.step-clean-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+    padding: 0.75rem 1rem;
+    background-color: var(--card-background);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: left;
+}
+
+.step-clean-item:hover {
+    transform: translateX(4px);
+    box-shadow: var(--shadow-md);
+}
+
+.step-badge {
+    font-size: 0.75rem;
+    font-weight: 900;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.375rem;
+    flex-shrink: 0;
+}
+
+/* Steps Colors */
+.step-clean-item.s-1 .step-badge {
+    background-color: #f3e8ff;
+    color: #a855f7;
+}
+
+.step-clean-item.s-1 .step-text {
+    color: #a855f7;
+}
+
+.step-clean-item.s-2 .step-badge {
+    background-color: #dbeafe;
+    color: #3b82f6;
+}
+
+.step-clean-item.s-2 .step-text {
+    color: #3b82f6;
+}
+
+.step-clean-item.s-3 .step-badge {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+.step-clean-item.s-3 .step-text {
+    color: #15803d;
+}
+
+.step-clean-item.s-4 .step-badge {
+    background-color: #fef3c7;
+    color: #d97706;
+}
+
+.step-clean-item.s-4 .step-text {
+    color: #d97706;
+}
+
+.step-clean-item.s-5 .step-badge {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+
+.step-clean-item.s-5 .step-text {
+    color: #dc2626;
+}
+
+/* Real Assignment Example Card */
+.example-box-section {
+    margin-bottom: 2.5rem;
+}
+
+.example-card-editorial {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.pro-tip {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.example-title {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-family: var(--font-heading);
+}
+
+.example-text {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #0f172a;
+}
+
+/* Highlight Markers */
+.hl-pink {
+    background-color: #f3e8ff;
+    color: #7e22ce;
+    padding: 0.15rem 0.35rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+}
+
+.hl-blue {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+    padding: 0.15rem 0.35rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+}
+
+.hl-green {
+    background-color: #dcfce7;
+    color: #15803d;
+    padding: 0.15rem 0.35rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+}
+
+.hl-orange {
+    background-color: #ffedd5;
+    color: #c2410c;
+    padding: 0.15rem 0.35rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+}
+
+/* Task Readiness Checklist */
+.checklist-section {
+    margin-bottom: 3.5rem;
+}
+
+.checklist-card {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.checklist-card h2 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 1.25rem;
+    font-family: var(--font-heading);
+}
+
+.checklist-items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-left: 0;
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    padding: 0.6rem 0.75rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease;
+}
+
+.checkbox-row:hover {
+    background-color: #f8fafc;
+}
+
+.checkbox-input {
+    display: none;
+}
+
+/* Task Readiness Checklist */
+.custom-checkbox {
+    width: 1.35rem;
+    height: 1.35rem;
+    border: 2px solid #cbd5e1;
+    border-radius: 0.375rem;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.checkbox-input:checked+.custom-checkbox {
+    background-color: var(--brand-blue);
+    border-color: var(--brand-blue);
+}
+
+.custom-checkbox::after {
+    content: "";
+    width: 0.35rem;
+    height: 0.65rem;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) scale(0);
+    transition: transform 0.2s ease;
+    margin-bottom: 0.1rem;
+}
+
+.checkbox-input:checked+.custom-checkbox::after {
+    transform: rotate(45deg) scale(1);
+}
+
+.checkbox-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    transition: font-weight 0.15s ease, color 0.15s ease;
+}
+
+.checkbox-input:checked~.checkbox-text {
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+/* CTA Next Step Section */
+.cta-next-step {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.cta-subtext {
+    font-size: 1.05rem;
+    font-style: italic;
+    color: var(--text-muted);
+    margin-bottom: 1.25rem;
+}
+
+/* Mobile Adaptation */
+@media (max-width: 48rem) {
+    .hero-step h1 {
+        font-size: 2rem;
     }
 }
