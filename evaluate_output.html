@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03. Evaluate Output — AI for Better Learning</title>
+    <meta
+      name="description"
+      content="Learn how to critically evaluate AI-generated answers, spot potential bias, and avoid blindly trusting everything AI tells you."
+    />
+    <meta
+      name="keywords"
+      content="Understand the task, Write better prompts, Evaluate AI output, Make it yours, Contact us"
+    />
+    <meta name="author" content="Nick Ivannikov" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" type="image/png" href="img/logo.png" />
+  </head>
+  <body>
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+      <nav class="main-nav" aria-label="Main Navigation">
+        <!-- Logo Section -->
+        <a href="index.html" class="logo-container">
+          <img
+            src="img/logo.png"
+            alt="MIND aid logo"
+            title="Website logo"
+            class="logo-icon"
+          />
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="desktop-nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="understand_task.html">01. Understand Task</a></li>
+          <li><a href="write_better_prompts.html">02. Write Prompts</a></li>
+          <li>
+            <a href="evaluate_output.html" class="active" aria-current="page"
+              >03. Evaluate Output</a
+            >
+          </li>
+          <li><a href="make_it_yours.html">04. Make It Yours</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+
+        <!-- Mobile Navigation -->
+        <details class="mobile-menu-details">
+          <summary class="burger-button" aria-label="Toggle navigation menu">
+            <span aria-hidden="true">☰</span>
+          </summary>
+          <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="understand_task.html">01. Understand Task</a></li>
+            <li><a href="write_better_prompts.html">02. Write Prompts</a></li>
+            <li>
+              <a href="evaluate_output.html" class="active" aria-current="page"
+                >03. Evaluate Output</a
+              >
+            </li>
+            <li><a href="make_it_yours.html">04. Make It Yours</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </details>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="evaluate-page">
+      <!-- Hero Header -->
+      <section class="hero-step">
+        <p class="step-tag-blue">STEP 03</p>
+        <h1>Evaluate AI Output</h1>
+        <p class="hero-lead">
+          Confident doesn't mean correct. Always check before you trust it.
+        </p>
+      </section>
+
+      <!-- Interactive AI Sample Section -->
+      <section class="evaluate-sample-section">
+        <article class="evaluate-card">
+          <header class="evaluate-card-header">
+            <img
+              src="img/brain.png"
+              alt="AI Icon"
+              title="AI assistant illustration"
+              class="badge-icon-img"
+            />
+            <p class="evaluate-card-subtitle">
+              AI-Generated Answer Sample
+              <small>(click underlined text to inspect claims)</small>
+            </p>
+          </header>
+
+          <!-- Hidden CSS Radio Inputs -->
+          <input
+            type="radio"
+            name="claim_toggle"
+            id="toggle-none"
+            class="css-toggle-radio"
+            checked
+          />
+          <input
+            type="radio"
+            name="claim_toggle"
+            id="toggle-claim-1"
+            class="css-toggle-radio"
+          />
+          <input
+            type="radio"
+            name="claim_toggle"
+            id="toggle-claim-2"
+            class="css-toggle-radio"
+          />
+          <input
+            type="radio"
+            name="claim_toggle"
+            id="toggle-claim-3"
+            class="css-toggle-radio"
+          />
+
+          <blockquote class="ai-response-text">
+            "Regular physical activity can improve memory and concentration.
+            <!-- Claim 1 -->
+            <label for="toggle-claim-1" class="hl-clickable-text"
+              >A 2023 study</label
+            >
+            found that students who exercise regularly performed
+            <!-- Claim 2 -->
+            <label for="toggle-claim-2" class="hl-clickable-text"
+              >40% better</label
+            >
+            on memory tests. Recent studies also suggest that exercise increases
+            neurogenesis in the brain, which
+            <!-- Claim 3 -->
+            <label for="toggle-claim-3" class="hl-clickable-text"
+              >may lead to better academic performance.</label
+            >"
+          </blockquote>
+
+          <!-- Dynamic Doubt Windows -->
+          <section class="doubt-window doubt-window-1">
+            <span class="doubt-icon" aria-hidden="true">❓</span>
+            <p class="doubt-content">
+              <strong>Which 2023 study?</strong> Can you find the original
+              study, dataset, or peer-reviewed publication behind this claim?
+            </p>
+            <label
+              for="toggle-none"
+              class="close-doubt-button"
+              title="Close inspector"
+              >&times;</label
+            >
+          </section>
+
+          <section class="doubt-window doubt-window-2">
+            <span class="doubt-icon" aria-hidden="true">❓</span>
+            <p class="doubt-content">
+              <strong>Where does this 40% number come from?</strong> Isn't this
+              a statistics manipulation or an exaggerated summary?
+            </p>
+            <label
+              for="toggle-none"
+              class="close-doubt-button"
+              title="Close inspector"
+              >&times;</label
+            >
+          </section>
+
+          <section class="doubt-window doubt-window-3">
+            <span class="doubt-icon" aria-hidden="true">❓</span>
+            <p class="doubt-content">
+              <strong>Is this an oversimplification?</strong> Correlation does
+              not equal causation. How strong is this link in reality?
+            </p>
+            <label
+              for="toggle-none"
+              class="close-doubt-button"
+              title="Close inspector"
+              >&times;</label
+            >
+          </section>
+        </article>
+      </section>
+
+      <!-- Questions to Ask Grid -->
+      <section class="questions-section">
+        <h2>Questions to Ask</h2>
+        <section class="questions-grid">
+          <article class="questions-card">
+            <h3>1. WHERE IS IT FROM?</h3>
+            <p>
+              Check sources. Find original studies, datasets, or backend
+              references.
+            </p>
+          </article>
+          <article class="questions-card">
+            <h3>2. DOES IT MAKE SENSE?</h3>
+            <p>
+              Check logic. Does evidence genuinely support the final conclusion?
+            </p>
+          </article>
+          <article class="questions-card">
+            <h3>3. WHAT FEELS OFF?</h3>
+            <p>
+              Spot missing details, absolute claims, or confident statements
+              without evidence.
+            </p>
+          </article>
+        </section>
+      </section>
+
+      <!-- Think Before You Regenerate Section -->
+      <section class="think-section">
+        <header class="think-header">
+          <img
+            src="img/Plant.png"
+            alt="Plant Icon"
+            title="Plant illustration"
+            class="plant-icon-img"
+          />
+          <h2>Think Before You Regenerate</h2>
+          <p class="think-lead">
+            Not every problem needs another AI request. If you already have
+            enough information, take a moment to think, check, and work with
+            what you have.
+          </p>
+        </header>
+
+        <!-- Bear in Mind Grid -->
+        <section class="bear-in-mind-wrapper">
+          <h3 class="bear-title">ALSO BEAR IN MIND</h3>
+          <section class="bear-grid">
+            <article class="bear-card">
+              <header class="bear-card-header-inline">
+                <img
+                  src="img/lock.png"
+                  alt="Lock Icon"
+                  title="Protection illustration"
+                  class="bear-card-icon-img"
+                />
+                <h4>Protect your data</h4>
+              </header>
+              <p>
+                Don't share personal, sensitive, or confidential information
+                with AI unless you really need to.
+              </p>
+            </article>
+
+            <article class="bear-card">
+              <header class="bear-card-header-inline">
+                <img
+                  src="img/brain.png"
+                  alt="Brain Icon"
+                  title="Responsibility illustration"
+                  class="bear-card-icon-img"
+                />
+                <h4>Be responsible</h4>
+              </header>
+              <p>
+                You own the result. AI can help you learn and work, but you are
+                responsible for what you submit.
+              </p>
+            </article>
+
+            <article class="bear-card">
+              <header class="bear-card-header-inline">
+                <img
+                  src="img/resources.png"
+                  alt="Lightning Icon"
+                  title="Resources illustration"
+                  class="bear-card-icon-img"
+                />
+                <h4>Save resources</h4>
+              </header>
+              <p>
+                Every request requires electricity and computing resources.
+                Think before you regenerate.
+              </p>
+            </article>
+          </section>
+        </section>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-next-step">
+        <p class="cta-subtext">
+          You checked the answer. You thought before you regenerated.
+        </p>
+        <p class="cta-heading-sub">So, what do you do with it now?</p>
+        <p class="cta-action">
+          <a href="make_it_yours.html" class="button-hero"
+            >MAKE IT YOURS &rarr;</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>&copy; 2026 AI for Better Learning Project. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
